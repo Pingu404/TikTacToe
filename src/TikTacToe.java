@@ -39,10 +39,10 @@ public class TikTacToe {
 		
 		
 		
-		do {
-			
 		
 			
+		
+			do {
 		
 			Scanner scanner2 = new Scanner(System.in);
 			String move = scanner2.nextLine();
@@ -223,24 +223,43 @@ public class TikTacToe {
 				{
 					System.out.println("0 WINS");
 					turns++;
+					
 				
 				}
+		}
+			while (turns < 2);
 				
-				
-		} while (turns < 2);
-		System.out.println("Would you like to play again? y/n");
-		
-		Scanner scanner3 = new Scanner(System.in);
-		String play = scanner3.nextLine();
-		 if (play.equals(y))
-		 {
-			 new main();
-		 }
 	}
 		
 	
+		
+	
+	 void oWins() {
+		int wins = 0;
+		wins++;
+		System.out.println("0 has won"+ wins + "times!");
+		
+System.out.println("Would you like to play again? y/n");
+		
+		Scanner scanner3 = new Scanner(System.in);
+		String play = scanner3.nextLine();
+		 if (play.equals("y"))
+		 {
+			 new TikTacToe();
+		 }
+		 
+	}
+	
+	void xWins() {
+		
+		int wins;
+		wins++;
+		System.out.println("0 has won"+ wins + "times!");
+	}
+	
 	public static void main(String[] args) {
-		int 
+	
+		
 new TikTacToe();
 
 
