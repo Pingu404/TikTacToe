@@ -85,6 +85,7 @@ public class TikTacToe {
 			{
 				System.out.println("X WINS");
 				turns++;
+				xWins();
 			
 			}
 			
@@ -92,43 +93,48 @@ public class TikTacToe {
 			{
 				System.out.println("X WINS");
 				turns++;
+				xWins();
 			
 			}
 			if((c1.equals("X "))&&(c2.equals("X "))&&(c3.equals("X ")))
 			{
 				System.out.println("X WINS");
 				turns++;
+				xWins();
 			
 			}
 			if((a1.equals("X "))&&(b1.equals("X "))&&(c1.equals("X ")))
 			{
 				System.out.println("X WINS");
 				turns++;
+				xWins();
 			
 			}
 			if((a2.equals("X "))&&(b2.equals("X "))&&(c2.equals("X ")))
 			{
 				System.out.println("X WINS");
 				turns++;
+				xWins();
 			
 			}
 			if((a3.equals("X "))&&(b3.equals("X "))&&(c3.equals("X ")))
 			{
 				System.out.println("X WINS");
 				turns++;
-			
+				xWins();
 			}
 			if((a1.equals("X "))&&(b2.equals("X "))&&(c3.equals("X ")))
 			{
 				System.out.println("X WINS");
 				turns++;
+				xWins();
 			
 			}
 			if((a3.equals("X "))&&(b2.equals("X "))&&(c1.equals("X ")))
 			{
 				System.out.println("X WINS");
 				turns++;
-			
+				xWins();
 			}
 			
 			if (movesSoFar == 9)
@@ -181,6 +187,7 @@ public class TikTacToe {
 				{
 					System.out.println("0 WINS");
 					turns++;
+					oWins();
 				
 				}
 				
@@ -188,56 +195,60 @@ public class TikTacToe {
 				{
 					System.out.println("0 WINS");
 					turns++;
+					oWins();
 				}
 				if((c1.equals("0 "))&&(c2.equals("0 "))&&(c3.equals("0 ")))
 				{
 					System.out.println("0 WINS");
 					turns++;
+					oWins();
 				
 				}
 				if((a1.equals("0 "))&&(b1.equals("0 "))&&(c1.equals("0 ")))
 				{
 					System.out.println("0 WINS");
 					turns++;
-				
+					oWins();
 				}
 				if((a2.equals("0 "))&&(b2.equals("0 "))&&(c2.equals("0 ")))
 				{
 					System.out.println("0 WINS");
 					turns++;
+					oWins();
 				
 				}
 				if((a3.equals("0 "))&&(b3.equals("0 "))&&(c3.equals("0 ")))
 				{
 					System.out.println("0 WINS");
 					turns++;
+					oWins();
 				
 				}
 				if((a1.equals("0 "))&&(b2.equals("0 "))&&(c3.equals("0 ")))
 				{
 					System.out.println("0 WINS");
 					turns++;
+					oWins();
 				
 				}
 				if((a3.equals("0 "))&&(b2.equals("0 "))&&(c1.equals("0 ")))
 				{
 					System.out.println("0 WINS");
 					turns++;
+					 oWins();
 					
-				
 				}
 		}
 			while (turns < 2);
 				//hi
 	}
 		
-	
 		
 	
-	 void oWins() {
-		int wins = 0;
-		wins++;
-		System.out.println("0 has won"+ wins + "times!");
+	  public static void oWins() {
+		
+		int wins1 =+ 1;
+		System.out.println("0 has won "+ wins1 + " times!");
 		
 System.out.println("Would you like to play again? y/n");
 		
@@ -250,11 +261,20 @@ System.out.println("Would you like to play again? y/n");
 		 
 	}
 	
-	void xWins() {
+   public static void xWins() {
 		
-		int wins;
-		wins++;
-		System.out.println("0 has won"+ wins + "times!");
+	   
+		int wins =+ 1;
+		System.out.println("X has won "+ wins + " times!");
+		
+System.out.println("Would you like to play again? y/n");
+		
+		Scanner scanner3 = new Scanner(System.in);
+		String play = scanner3.nextLine();
+		 if (play.equals("y"))
+		 {
+			 new TikTacToe();
+		 }
 	}
 	
 	public static void main(String[] args) {
