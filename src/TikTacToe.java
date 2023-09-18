@@ -47,31 +47,31 @@ public class TikTacToe {
 			Scanner scanner2 = new Scanner(System.in);
 			String move = scanner2.nextLine();
 			//Sets the value for the move
-			if (move.equals("a1")) {
+			if (move.equals("a1")&&(a1.equals("__"))) {
 		    a1 = "X "; 
 			}
-			if (move.equals("a2")) {
+			if (move.equals("a2")&&(a2.equals("__"))) {
 			    a2 = "X "; 
 				}
-			if (move.equals("a3")) {
+			if (move.equals("a3")&&(a3.equals("__"))) {
 				    a3 = "X "; 
 				}
-			if (move.equals("b1")) {
+			if (move.equals("b1")&&(b1.equals("__"))) {
 			    b1 = "X "; 
 				}
-			if (move.equals("b2")) {
+			if (move.equals("b2")&&(b2.equals("__"))) {
 			    b2 = "X "; 
 				}
-			if (move.equals("b3")) {
+			if (move.equals("b3")&&(b3.equals("__"))) {
 			    b3 = "X "; 
 				}
-			if (move.equals("c1")) {
+			if (move.equals("c1")&&(c1.equals("__"))) {
 			    c1 = "X "; 
 				}
-			if (move.equals("c2")) {
+			if (move.equals("c2")&&(c2.equals("__"))) {
 			    c2 = "X "; 
 				}
-			if (move.equals("c3")) {
+			if (move.equals("c3")&&(c3.equals("__"))) {
 			    c3 = "X "; 
 				}
 			
@@ -148,31 +148,31 @@ public class TikTacToe {
 				String move0 = scanner.nextLine();
 				//Sets the value for the move
 				
-				if (move0.equals("a1")) {
+				if (move0.equals("a1")&&(a1.equals("__"))) {
 			    a1 = "0 "; 
 				}
-				if (move0.equals("a2")) {
+				if (move0.equals("a2")&&(a2.equals("__"))) {
 				    a2 = "0 "; 
 					}
-				if (move0.equals("a3")) {
-					    a3 = "0 "; 
+				if (move0.equals("a3")&&(a3.equals("__"))) {
+					    a3 = "0 ";  
 					}
-				if (move0.equals("b1")) {
+				if (move0.equals("b1")&&(b1.equals("__"))) {
 				    b1 = "0 "; 
 					}
-				if (move0.equals("b2")) {
+				if (move0.equals("b2")&&(b2.equals("__"))) {
 				    b2 = "0 "; 
 					}
-				if (move0.equals("b3")) {
+				if (move0.equals("b3")&&(b3.equals("__"))) {
 				    b3 = "0 "; 
 					}
-				if (move0.equals("c1")) {
+				if (move0.equals("c1")&&(c1.equals("__"))) {
 				    c1 = "0 "; 
 					}
-				if (move0.equals("c2")) {
+				if (move0.equals("c2")&&(c2.equals("__"))) {
 				    c2 = "0 "; 
 					}
-				if (move0.equals("c3")) {
+				if (move0.equals("c3")&&(c3.equals("__"))) {
 				    c3 = "0 "; 
 					}
 				
@@ -268,7 +268,7 @@ System.out.println("Would you like to play again? y/n");
 		System.out.println("X has won "+ wins + " times!");
 		
 System.out.println("Would you like to play again? y/n");
-		
+		 
 		Scanner scanner3 = new Scanner(System.in);
 		String play = scanner3.nextLine();
 		 if (play.equals("y"))
