@@ -27,9 +27,13 @@ public class botGame {
 		System.out.println("Welcome to TikTacToe!!!");
 		System.out.println("please input the move for X to begin");
 	
+		int gameLength = 0;
+		
 	do {
 		
+		
 	
+		
 	if (turns == 1) {
 		
 		Scanner scanner2 = new Scanner(System.in);
@@ -37,30 +41,39 @@ public class botGame {
 		//Sets the value for the move
 		if (move.equals("a1")&&(a1.equals("__"))) {
 	    a1 = "X "; 
+	    gameLength++;
 		}
 		if (move.equals("a2")&&(a2.equals("__"))) {
 		    a2 = "X "; 
+		    gameLength++;
 			}
 		if (move.equals("a3")&&(a3.equals("__"))) {
 			    a3 = "X "; 
+			    gameLength++;
 			}
 		if (move.equals("b1")&&(b1.equals("__"))) {
 		    b1 = "X "; 
+		    gameLength++;
 			}
 		if (move.equals("b2")&&(b2.equals("__"))) {
 		    b2 = "X "; 
+		    gameLength++;
 			}
 		if (move.equals("b3")&&(b3.equals("__"))) {
 		    b3 = "X "; 
+		    gameLength++;
 			}
 		if (move.equals("c1")&&(c1.equals("__"))) {
 		    c1 = "X "; 
+		    gameLength++;
 			}
 		if (move.equals("c2")&&(c2.equals("__"))) {
 		    c2 = "X "; 
+		    gameLength++;
 			}
 		if (move.equals("c3")&&(c3.equals("__"))) {
 		    c3 = "X "; 
+		    gameLength++;
 			}
 		
 		//prints out the new bord
@@ -115,10 +128,21 @@ public class botGame {
 		{
 			System.out.println("X WINS");
 			botxWins();
+		}
 		
-	
-	 
-	
+		if (gameLength == 9) {
+			System.out.println("Good Time, It was a tie!!! Would you like to play again?? y/n");
+			
+			Scanner scanner22 = new Scanner(System.in);
+			String tie =  scanner22.nextLine();
+			
+			if (tie.equals("y")) {
+				new botGame(); 
+			}
+			else
+			{
+				System.out.println("Thanks for Playing!!!");
+			}
 		}
 		
 		turns++;
@@ -128,30 +152,39 @@ public class botGame {
 	 
 		if (b2.equals("__")) {
 			b2 = "0 ";
+			gameLength++;
 		}
 		else if (a2.equals("__")) {
 			a2 = "0 "; 
+			gameLength++;
 		} 
 		else if (a1.equals("__")) {
 			a1 = "0 "; 
+			gameLength++;
 		} 
 		else if (c3.equals("__")) {
 			c3 = "0 "; 
+			gameLength++;
 		} 
 		else if (a3.equals("__")) {
 			a3 = "0 "; 
+			gameLength++;
 		} 
 		else if (c1.equals("__")) {
 			c1 = "0 "; 
+			gameLength++;
 		} 
 		else if (a3.equals("__")) {
 			a3 = "0 "; 
+			gameLength++;
 		} 
 		else if (c2.equals("__")) {
 			c2 = "0 "; 
+			gameLength++;
 		} 
 		else if (b3.equals("__")) {
 			b3 = "0 "; 
+			gameLength++;
 		} 
 				
 		System.out.println("  a  b  c");
