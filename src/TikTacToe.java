@@ -278,9 +278,23 @@ System.out.println("Would you like to play again? y/n");
 	}
 	
 	public static void main(String[] args) {
-	
+		 
+		System.out.println("Hello and Welome to TicTacToe!!!!");
+		System.out.println("Would you like to play agenst a 'bot' or agenst 'someone else'???");
 		
-new TikTacToe();
+		Scanner scanner8 = new Scanner(System.in);
+		String whoToPlay = scanner8.nextLine();
+		
+		if (whoToPlay.equals("bot")) 
+		{
+			new botGame();
+		} 
+		else
+		{
+			new TikTacToe();
+		}
+		
+
 
 
 	}
