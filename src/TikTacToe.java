@@ -287,7 +287,16 @@ System.out.println("Would you like to play again? y/n");
 		
 		if (whoToPlay.equals("bot")) 
 		{
-			new botGame();
+			System.out.println("Do you want to play 'hard' or 'easy' mode?");
+			Scanner scanner7 = new Scanner(System.in);
+			String easyHard = scanner7.nextLine();
+			if (easyHard.equals("hard")) {
+				new Game();
+			}
+			else {
+				new botGame();
+			}
+			
 		} 
 		else
 		{
