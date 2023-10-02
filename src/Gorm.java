@@ -94,8 +94,7 @@ public class Gorm {
 							oWon();
 						} else if ((row2[0].equals("0 "))&&(row2[1].equals("0 "))&&(row2[2].equals("0 "))) {
 							oWon();
-						} els
-						e if ((row2[0].equals("0 "))&&(row2[1].equals("0 "))&&(row2[2].equals("0 "))) {
+						} else if ((row2[0].equals("0 "))&&(row2[1].equals("0 "))&&(row2[2].equals("0 "))) {
 							System.out.println("0 Wins");
 						}
 						xTurn();

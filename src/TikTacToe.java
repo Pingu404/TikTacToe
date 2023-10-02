@@ -310,7 +310,7 @@ System.out.println("Would you like to play again? y/n");
 		String arrayVar = scanner27.nextLine();
 		if (arrayVar.equals("a"))
 		{
-			new arrayVarGame();
+			new Gorm();
 		}
 		else
 		{
