@@ -298,6 +298,20 @@ System.out.println("Would you like to play again? y/n");
 			}
 			
 		} 
+		else if (whoToPlay.equals("a"))
+		{
+			new arrayVarGame();
+		} else if (whoToPlay.equals("b")){
+			new Gorm();
+		}
+		else
+			System.out.println("Would you like a one made with an array or varubles? a/v");
+		Scanner scanner27 = new Scanner(System.in);
+		String arrayVar = scanner27.nextLine();
+		if (arrayVar.equals("a"))
+		{
+			new arrayVarGame();
+		}
 		else
 		{
 			new TikTacToe();
