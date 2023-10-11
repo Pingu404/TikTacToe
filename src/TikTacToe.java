@@ -280,6 +280,14 @@ System.out.println("Would you like to play again? y/n");
 	public static void main(String[] args) {
 		 
 		System.out.println("Hello and Welome to TicTacToe!!!!");
+		System.out.println("would you like to play with a ui? y/n");
+		
+
+		Scanner scanner9 = new Scanner(System.in);
+		String uis = scanner9.nextLine();
+		
+		if (uis.equals("n")) {
+		
 		System.out.println("Would you like to play agenst a 'bot' or agenst 'someone else'???");
 		
 		Scanner scanner8 = new Scanner(System.in);
@@ -317,7 +325,11 @@ System.out.println("Would you like to play again? y/n");
 			new TikTacToe();
 		}
 		
-
+		} else { 
+			
+		new uiGame();
+		}
+		
 
 
 	}
