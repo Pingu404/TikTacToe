@@ -12,7 +12,7 @@ public class uiGame {
 	public String[] row3 = { "__", "__", "__"};
 	public int turns = 0;
 	public int xoro = 0;  
-	
+	//lol
 	uiGame() {
 		JFrame frame = new JFrame("Tic Tac Toe");
 		
